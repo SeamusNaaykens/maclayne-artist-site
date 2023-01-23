@@ -1,8 +1,11 @@
 import './Homepage.scss'
+import About from '../../components/About/About'
 
 function Homepage() {
     return(
-        <main></main>
+        <main>
+            <About/>
+        </main>
     )
 }
 export default Homepage
