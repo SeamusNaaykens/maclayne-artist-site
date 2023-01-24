@@ -3,6 +3,7 @@ import About from '../../components/About/About'
 import ListenNow from '../../components/ListenNow/ListenNow'
 import LiveSessions from '../../components/LiveSessions/LiveSessions'
 import Contact from '../../components/Contact/Contact'
+import Footer from '../../components/Footer/Footer'
 import facebook from '../../assets/icons/facebook-white.png'
 import instagram from '../../assets/icons/insta-white.png'
 import youtube from '../../assets/icons/youtube-white.png'
@@ -27,6 +28,7 @@ function Homepage() {
             <ListenNow />
             <LiveSessions />
             <Contact/>
+            <Footer/>
         </main>
     )
 }
