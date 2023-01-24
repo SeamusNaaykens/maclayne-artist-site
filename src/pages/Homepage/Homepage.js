@@ -2,9 +2,11 @@ import './Homepage.scss'
 import About from '../../components/About/About'
 import ListenNow from '../../components/ListenNow/ListenNow'
 import LiveSessions from '../../components/LiveSessions/LiveSessions'
+import Contact from '../../components/Contact/Contact'
 import facebook from '../../assets/icons/facebook-white.png'
 import instagram from '../../assets/icons/insta-white.png'
 import youtube from '../../assets/icons/youtube-white.png'
+
 
 
 function Homepage() {
@@ -24,6 +26,7 @@ function Homepage() {
             <About />
             <ListenNow />
             <LiveSessions />
+            <Contact/>
         </main>
     )
 }
