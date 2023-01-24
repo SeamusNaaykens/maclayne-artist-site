@@ -4,16 +4,52 @@
 
 .about {
     padding: 1rem 3rem 0rem 3rem;
+
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: .3125rem solid $grey;
+        margin-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    @include desktop {
+        margin-top: 4rem;
+    }
+
+    &__container {
+        @include tablet {
+            width: 45%;
+        }
+    }
     
 
     &__heading {
         font-family: 'RedHatHeading';
+
+        @include tablet {
+            font-size: 2rem;
+        }
+
+        @include desktop {
+            font-size: 3rem;
+        }
     }
 
     &__copy {
         font-family: 'copy';
         font-size: .875rem;
         margin-bottom: 4rem;
+
+        @include tablet {
+            margin-bottom: 0rem;
+            font-size: .8125rem;
+        }
+
+        @include desktop {
+            font-size: 1rem;
+        }
     }
 
     &__image {
@@ -21,6 +57,18 @@
         height: 100%;
         padding-bottom: 4rem;
         border-bottom: .3125rem solid $grey;
+
+        @include tablet {
+            width: 45%;
+            height: 100%;
+            border-bottom: none;
+            padding-bottom: 0rem;
+        }
+
+        @include desktop {
+            height: 40rem;
+            width: 30rem;
+        }
     }
 
 }

@@ -3,15 +3,40 @@
 @use '../../styles/variables' as *;
 
 .listen-now {
-
     padding: 1rem 3rem 0rem 3rem;
+
+    @include desktop {
+        padding: 1rem 6rem 0rem 6rem;
+    }
 
     &__heading {
         font-family: 'RedHatHeading';
+
+        @include tablet {
+            font-size: 2rem;
+        }
+
+        @include desktop {
+            font-size: 3rem;
+        }
     }
+
+    &__container {
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: .3125rem solid $grey;
+        }
+    }
+
 
     &__iframe {
         height: 12rem;
+
+        @include desktop {
+            height: 15rem;
+            width: 30rem;
+        }
     }
 
     &__iframe-container {
@@ -40,6 +65,10 @@
         font-weight: 100;
         padding-bottom: 2rem;
         border-bottom: .3125rem solid $grey;
+
+        @include tablet {
+            border-bottom: none;
+        }
     }
 
     &__iframe-link {
