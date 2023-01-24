@@ -1,0 +1,86 @@
+@use '../../styles/font' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.homepage {
+    width: 100%;
+
+    &__hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(../../assets/images/IMG_4173.JPG);
+        background-size: cover;
+        height: 100vw;
+        background-repeat: no-repeat;
+        background-position-y: -30vw;
+        font-family: 'RedHatHeading';
+        padding: 2rem 3rem 1rem 3rem;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+    }
+
+    &__heading {
+        color: $white;
+        font-family: 'RedHatHeading', monospace;
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        animation: animated-text 4s steps(10, end) 1s 1 normal both,
+            animated-cursor 600ms steps(10, end) infinite;
+        // white-space: nowrap;
+        // overflow: hidden;
+
+    }
+
+    // @keyframes animated-text {
+    //     from {
+    //         width: 0;
+    //     }
+
+    //     to {
+    //         width: 12rem;
+    //     }
+    // }
+
+    // /* cursor animations */
+
+    // @keyframes animated-cursor {
+    //     from {
+    //         border-right-color: $white;
+    //     }
+
+    //     to {
+    //         border-right-color: transparent;
+    //     }
+    // }
+
+    &__copy {
+        color: $white;
+        font-family: 'RedHatCopy';
+        text-align: center;
+        font-size: .75rem;
+        margin: 0rem 0rem 2rem 0rem;
+    }
+
+    &__icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 50%;
+        max-width: 50%;
+    }
+
+    &__icon {
+        width: 2rem;
+    }
+
+    &__icon--fb {
+        width: 1.5rem;
+    }
+}
