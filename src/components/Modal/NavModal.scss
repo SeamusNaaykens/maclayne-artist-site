@@ -1,0 +1,22 @@
+@use '../../styles/font' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.nav-modal {
+    font-family: 'RedHatCopy';
+    padding: 3.5rem 1rem 1rem 1rem;
+    // position: absolute;
+    // z-index: 1000;
+
+    &__link-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__link {
+        color: $white;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+}

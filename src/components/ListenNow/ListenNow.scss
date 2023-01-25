@@ -6,7 +6,7 @@
     padding: 1rem 3rem 0rem 3rem;
 
     @include desktop {
-        padding: 1rem 6rem 0rem 6rem;
+        padding: 1rem 8rem 0rem 8rem;
     }
 
     &__heading {
@@ -25,6 +25,7 @@
         @include tablet {
             display: flex;
             justify-content: space-between;
+            padding-bottom: 4rem;
             border-bottom: .3125rem solid $grey;
         }
     }
@@ -32,10 +33,14 @@
 
     &__iframe {
         height: 12rem;
+        border-radius: .625rem;
+        box-shadow: 4px 4px 4px $dark;
 
         @include desktop {
-            height: 15rem;
-            width: 30rem;
+            height: 20vw;
+            width: 35vw;
+            border-radius: .625rem;
+            box-shadow: 4px 4px 4px $dark;
         }
     }
 

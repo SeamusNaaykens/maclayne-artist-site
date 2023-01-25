@@ -11,7 +11,7 @@
         align-items: center;
         background-image: url(../../assets/images/IMG_4173.JPG);
         background-size: cover;
-        height: 100vw;
+        height: 85vw;
         background-repeat: no-repeat;
         background-position-y: -30vw;
         font-family: 'RedHatHeading';
@@ -41,7 +41,7 @@
         }
 
         @include desktop {
-            font-size: 10rem;
+            font-size: 15rem;
         }
 
     }
@@ -77,6 +77,10 @@
 
         @include tablet {
             font-size: 1.125rem;
+        }
+
+        @include desktop {
+            font-size: 2rem;
         }
     }
 
