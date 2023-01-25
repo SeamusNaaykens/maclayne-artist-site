@@ -7,13 +7,13 @@ function Footer() {
     return (
         <div className='footer'>
             <div className='footer__icon-container'>
-                <a href='https://www.facebook.com/MaclayneEva/'>
+                <a href='https://www.facebook.com/MaclayneEva/' target='_blank' rel="noreferrer noopener">
                     <img className='footer__icon--fb' src={facebook} alt='facebook icon' />
                 </a>
-                <a href='https://www.instagram.com/maclaynes/'>
+                <a href='https://www.instagram.com/maclaynes/' target='_blank' rel="noreferrer noopener">
                     <img className='footer__icon' src={insta} alt='instagram icon' />
                 </a>
-                <a href='https://www.youtube.com/@maclayne'>
+                <a href='https://www.youtube.com/@maclayne' target='_blank' rel="noreferrer noopener">
                     <img className='footer__icon' src={youtube} alt='youtube icon' />
                 </a>
             </div>
