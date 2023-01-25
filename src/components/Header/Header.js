@@ -6,9 +6,6 @@ import Modal from 'react-modal'
 import NavModal from '../Modal/NavModal'
 import React from 'react'
 
-
-
-
 function Header() {
 
     // Logic used to open and close modal
